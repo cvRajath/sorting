@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+        <script>
+          let company = [
+            {name:"lv" , year:2001},
+            {name:"philips",year:1999},
+            {name:"bm",year:2000}
+
+          ];
+          Company1();
+          company.sort(function (a, b){return a.year - b.year});
+          Company1();
+
+          function Company1(){
+            document.getElementById("demo").innerHTML=
+            company[0].name +" " + company[0].year+"<br>"+
+            company[1].name + " " + company[1].year +"<br>"+
+            company[2].name + " " + company[2].year;
+
+
+            
+          }
+
+
+        </script>
+    
+</body>
+</html>

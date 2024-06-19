@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let persons={ fname:"Ramyakumar", lastname: "vv" , age:45};
+        let person= { mname:"salini", lastname: "cv" , age:35 };
+
+        let ar="";
+        for (let x in persons){
+            ar +=persons[x]+" "
+        }
+        console.log(ar)
+       
+       
+        let ar1="";
+        for (let x in person){
+        ar1+=person[x]+ " "
+         }
+         console.log(ar1)
+    </script>
+</body>
+</html>

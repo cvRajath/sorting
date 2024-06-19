@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><input type="number" id="ageToCheck" value="50"</p>
+    <button onclick="arr1()">Try it</button>
+
+    <p id="demo"></p>
+ 
+<script>
+    let arr=[32,40,50,12,36]
+    function checkAge(arr2){
+        return arr2 > document.getElementById("ageToCheck").value;
+
+    }
+    function arr1(){
+        document.getElementById("demo").innerHTML=arr.filter(checkAge);
+
+    }
+</script>
+
+
+    
+</body>
+</html>
